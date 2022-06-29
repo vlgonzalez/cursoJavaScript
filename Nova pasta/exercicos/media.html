@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numeros com js</title>
+</head>
+<h1>Média do aluno v1.0</h1>
+<body>
+    <input type="button" value="Calcular a media" onclick="clicar()" id="m1">
+    <p id="r1">O resultado vai aparecer aqui</p>
+    <script>
+        var b1 = window.document.getElementById('m1')
+        var res = window.document.getElementById('r1')
+        function clicar() {
+        b1.addEventListener('click',clicar)
+        var nome = window.prompt('Qual o nome do aluno')
+        var n1 = Number(window.prompt(`Qual foi a primeira nota do aluno ${nome}`))
+        var n2 = Number(window.prompt(`Qual foi a segunda nota do aluno ${nome}`))
+        var media = (n1+n2)/2
+        res.innerText= `O calculo final da media do aluno ${nome}. As notas fora ${n1} e ${n2}. A media final será ${media} !`
+        }
+
+
+    </script>
+</body>
+</html>

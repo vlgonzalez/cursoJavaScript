@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<h1>Qual o seu pais</h1>
+<body>
+    <p>para saber o seu pais <input type="button" value="Clique aqui" onclick="clicar()" id="b1"> </p>
+    <div id="t1">
+
+    </div>
+    <script>
+        var pais = window.document.getElementById('b1')
+        var res = window.document.getElementById('t1')
+        function clicar(){
+            var p2 = window.prompt('Qual pais vc mora?')
+            if(p2!= 'brasil'){
+            res.innerHTML= `<p> voce é estrangeiro</p>`}
+            else{
+            res.innerHTML= `<p> vc é brasileiro</p>`}
+        }
+    </script>
+</body>
+</html>

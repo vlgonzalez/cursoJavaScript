@@ -1,0 +1,216 @@
+Nomes das variaveis 
+Não pode começar com numeros 
+Não pode ter espaços 
+Não pode ser uma palavra reservada
+
+Boa pratica
+abrir sempre o js em outra aba e colocar dentro do body do html com o comando <script src='script.js'></script>
+
+Number - inteiros e reias
+String - cadeia de caracteres, como o CPF
+Boolean - verdadeido e falso
+typeof - indica qual o tipo da variavel 
+
+Comentarios em HTML <!-- comentario -->
+comentario em CSS /* comentario */
+Comentario em Java // comentario// ou igual ao CSS
+
+O Sinal de + pode ser usando para somar ou concatenar, se for uma string ele vai concatenar, se for um numero vai somar
+
+window.alert - abre uma jalena de aviso só da pra colocar ok
+window.prompt - deixa inserir um dado
+document.write - escreve no corpo do site
+
+
+determinação de tipo de variaveis para converter uma varievel em numero
+Number.parseInt(n) - determina numero inteiros
+Number.parsefloat(n) - determina numeros reais
+Number(n) - o JS ja identifica o tipo de numero 
+
+Para converter em uma String
+String(n) ou n.toString()
+
+Formatando Strings
+var s = 'JavaScript' - Ou seja a variavel s rece Javascript, sempre que colocar s vai aparecer JavaScript
+'Eu estou aprendendo s' - Não concatena, pois falta o sinal de + o sistema entende que o s faz parte do texto não que ele é uma variavel e deve trazer Javascript
+'Eu estou aprendendo' +s - usa concatenação, ou seja tem uma string entre aspas o sinal de + e a variavel S que traz o valor Javascript
+`Eu estou aprendendo ` - Usa template string, fica tudo entre CRASES,e vc digita as variaveis dentro do ${} , não precisa do sinal de mais e ficar feixando as aspas entre strings e variaveis
+
+Outros comandos formatar Strings
+s.length - quantos caracteres a string tem
+s.toUpperCase() - tudo para Maisculo
+s.toLowerCase() - Tudo para Minuscula
+
+Formatando variaveis em numeros
+var n1 = 1545.5
+n1.tofixed(2) - muda a variavel para duas casas deciamais ficando 1545.50
+n1.tofixed(2).replace('.',',') , esse comando aumenta as para duas as casas decimais e muda de ponto para virgula
+n1.tolocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) - tras o valor na moeda do brasil
+
+Operadores
+Aritimeitocs - uso para calculo + , -, *, /, % (divisão inteira, não tem virgula) , ** (potencia, no caso o numero que vai ser elevado)
+Ordem de precedencia do primeiro para o ultimo - (), **, *, / , % , +, -
+Auto - Atribução
+var n = 3 ( variavel simples)
+n = n + 4 resultado 7 ou n +=4
+n = n - 5 resultado 2 ou n -=5
+n = n * 4 resultado 16  ou n *=4
+n = n / 2 resultado 8  ou n /=2
+n = n** 2  resultado 16 ou n**=2
+n = n % 2  resultado 1 ou n %=5
+
+Incremento
+++ ou -- soma ou tira uma unidade
+
+operadores relacionais
+>
+<
+>=
+<=
+== (um igual é recebe == é igual
+!= ( exclamação siguinifica não igual
+
+Operadores Logicos
+! negação ou  é verdadeiro ou falso
+&& conjução nosso e logico, binario, verdadeiro e verdadeiro igual a verdadeiro, verdadeiro e falso igual a falso, falso e verdadeiro igual falso, falso e falso igual a falso
+|| dijunção nosso ou logico, binario, verdadeiro ou verdadeiro resultado verdadeiro, verdadeiro ou falso verdadeiro, falso ou verdadeiro igual a verdadeiro, falso ou flaso igual a falso
+Em uma expreção a ordem é primeiro o não depois o e por ultimo o ou
+
+Operador ternario
+?
+:
+teste ? verdadeiro :false
+teste verdadeiro ou falso, se for verdadeiro o que acontece, se for falso o que aconte
+
+Modulo DOM
+modelo de objetos para documentos - conjunto de obejtos dentro do navegador, vai dar acesso as componentes dentro do site
+arvore dom - tudo é dentro da window (janela do navegador), 
+dentro temos a location - diz qual é a url do site, qual a pagina atual , qual a interior
+o document - que é o html
+history- guarda de onde vc veio para onde vc vai
+dentro do html eu tenho head e o body (filhos)
+quem ta embaixo é child quem ta encima é parent
+dentro de head tenho meta e title
+dentro do body tenho h1, p , p , div
+dentro do p tenho strong
+elemento qualquer coisa que apareceu dentro da arvore DOM
+
+posso selecionar os elementos para acessar o conteudo
+por marca ou tag name - getElementsByTagName() - selecionar mais de um obejto, seleciona pelo numero de elemento sendo que o primeiro começa pelo numero zero
+por ID - identifico o elemento com uma ID , quando tenho muitos elementos repetidos, posso usar o id para identificar o elemento que preciso
+por Name - uso se tenho a propriedade nome
+por Classe - 
+por seletor -
+
+comandos innerText - pega o texto do elemento sem as formatações
+.innerHTML - traz as formatações em html
+
+HTML
+h1 titulo principa
+<p> abre e fecha paragrafos
+<div> - tem um texto encima uma caixa que quebra essa linha de texto, e texo embaixo
+<strong> negrito
+
+funçao - conjunto de codigos que vão ser só executas quando um evento ocorrer, exemplo clicar em um botão
+para isso deve colocar um bloco dentro de chaves que deve ter um nome e ser identificado como function esse nome pode ser uma ação, e fica da seguinte forma function ação(param){}
+
+Preciso primeiro cadastrar um evento - ou seja o que vai acontencer escolho o comando que quero executar, exemplo onclick e dou o nome dessa ação que vai ser clicar, essa parte serve para dar o nome ao metodo que vai ser usando dentro da função
+a Function - vem com o codigo que diz o que vai acontecer quando vc executar o comando o evento programado
+
+comando onclick -clicar um botão - configura o metodo
+function clicar(){} - diz o que vai acontecer quando clicar
+onmouseenter - quando entrar com o mouse
+onmouseout - quando sair com o mouse
+posso usar tambem
+variavel.addEventlistener
+
+como identificar erros
+para achar erro abre a pagina, com o botão direito clica em inspecionar
+
+<input serve para colocar algo no corpo do email em seguida vem o type='' que vai indicar qual o tipo de informação esse campo vai receber, numero , email, imagem até botão
+quando eu tenho uma informação que veio de uma caixa de texto, ela é texto, preciso transformar em outra informação
+
+Condições
+dois caminhos possiveis 
+desvio condicional - desvia do caminho, depois volta
+If(condição), cria um bloco {} - verdadeiro
+Else{} - falso
+
+Condição só com verdadeiro ( simples) If( condição) {true}
+If(condição) {false}
+
+condição alinhada
+uma dentro de cada
+
+comando gethours - para pegar a hora atual
+
+condição multiplas
+alem do sim e não, aceita outros valores
+comando switch, tem varios valores Case , brake é obrigatorio entre os case , serve para quebrar caso a condição não seja satisfatoria
+switch(expressão) { case 0: valor terminou break
+pegar a data atual - cria uma variavel sinal de igua new Date()
+para pegar a hora vai ser - criar uma variavel sinal de igual data.getHours()
+
+comando onload - quando carrega a tela executa algo
+inseri uma imagem - <img id="img1" src="manha.png" alt="Foto do dia">
+
+comando
+<input type="radio" name="radsex" id="mas" checked> - coloca uma bola para selecionar entre duas opçoes
+<label for="mas">Masculino</label> - coloca uma legenda na bola que foi criada
+if(variavel.value.lebgth==0 || variavel.value >ano - verifica se a caixa de texto esta embranco ou se o ano informado é invalido por estar no futuro
+
+var img = document.createElement('img')
+        img.setAttribute('id','foto')
+Cria uma imagem por JS
+
+res.appendChild(img)
+coloca a imagem na tela com js
+
+condição que se repete enquanto um fato for verdadeiro comando while (condição {}
+Executa primeiro e verifica se a condição é verdadeira depois comando do {} while (condição)
+variavel de controle inicialização, faz o teste logico se verdadeiro executa o programa no bloco e retorna, mas quando retorna entra um encremento, voltar faz o teste logico e repete até o teste logico ficar falso, comando for (inicio;teste;incr){}
+depurador - 
+
+variavel composta
+Simples só concegue guardar um valor por vez
+variavel composta pode ter mais de um valor
+se escreve vaga a [, , ,] , começa com o indice zero, sempre vai de  0 a 9
+essa var variavel compostas é array ou vetor, cada elemento tem um valor e um indice que indica cada valor
+ Ex: let num = [5 ,8, 4] - vetor de tes elementos 0 , 1 e 2  com os valores 5, 8 e 4
+num [3] = 6 serve para colocar um valor dentro da variavel em uma posição que vc queria
+num.push(7) - coloca o valor 7 na ultima posição da variavel
+num.length - serve para indicar quantos elementos tem nessa variavel
+num.sorth () - colocar todos os elementos em ordem crscente
+for (let pos = 0; pos num.length; pos ++){console.log(`a posição ${pos} tem valor ${}`}
+
+outra maneiro
+
+for ( let pos  in nun  ){} - para cada posição em num eu vou mostrar o num pos - só serve para array e objetos
+para buscar um valor dentro de uma variavel num.indexOf(7) - busca o valor 7 e retorna a posição do valor
+-1 siguinifica que procurou um valor no vetor e não achou nada 
+toda função precisa de uma chama - algo que despara a ação
+parametro - informação que vc precisa 
+ação - o que vai fazer
+retorno- volta um valor
+
+function parimp(n){if (n%2==0){return 'par'}else{return impar}}
+let res = parimp
+
+retornar o cursor do mouse para o imput - num.focus()
+
+forEach() - executa uma função para cada item do array
+pop() remove item no final do array
+shit() -remove no inico
+push () - adiciona no começo
+unshift() adiciona no inicio
+splice () remove um subistitui um item por um indice
+slice()retorna uma parte do array já existente
+for( Nova variavel,condição variavel que ele vai pegar a condição) [função] 
+
+variavel.join('coloca qualquer simbolo aqui no meio dos elementos do array')
+window. open abre outro link, abre em outra aba 
+wundow.location.herf abre em outra janela
+onmouseover - passa o mouse encima ativa o comando
+onmouseout - quando tira o mouse sai
+
+

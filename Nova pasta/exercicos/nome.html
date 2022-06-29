@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados com js</title>
+    
+</head>
+<h1>
+Trabalhando com Dados v2.0
+</h1>
+<body>
+    <input type="button" value="clique para começar" onclick="clicar()" id="n1">
+    <p id="t1">Aqui vai aparecer o resultado</p>
+    <script>
+    var n2 = window.document.getElementById('n1')
+    var t2 = window.document.getElementById('t1')
+    function clicar () {
+        n2.addEventListener('click',clicar)
+        var nome = window.prompt('Qual é o seu nome')
+        t2.innerText=`Seu nome é ${nome}`
+    }
+</script>
+</body>
+</html>
